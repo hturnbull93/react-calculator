@@ -167,7 +167,7 @@ Wrote a test that Keypad renders the numbers passed from the numbers prop. Red.
 
 Green.
 
-### Keypad renders Operators
+### Keypad Renders Operators
 
 Wrote a test that Keypad renders the operators passed from the operators prop. Red.
 
@@ -176,3 +176,7 @@ Wrote a test that Keypad renders the operators passed from the operators prop. R
 - Adjusted previous test to reflect the fact there are three divs now.
 
 Added some css for the keypad also.
+
+### Keypad Renders a Key
+
+Wrote a test for Keypad to render a Key component. Red.

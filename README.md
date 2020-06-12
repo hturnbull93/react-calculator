@@ -77,3 +77,8 @@ In `src/components/Calculator/Calculator.jsx`:
 - Renders div.
 - Also added some state for later on.
 
+Calculator test green.
+
+- Imported and rendered Calculator in App.
+
+App test Green.

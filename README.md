@@ -115,3 +115,7 @@ Display test green.
 Calculator test green.
 
 To fix the warning from the prop types requirement, `displayValue` can be passed with an empty string for now.
+
+Updated the Calculator renders Display test matching element to be a Display component with the prop `displayValue` passed. `displayValue` is the Calculator instance's `displayValue` in its state. Red.
+
+- 

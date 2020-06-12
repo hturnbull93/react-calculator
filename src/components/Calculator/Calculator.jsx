@@ -4,7 +4,7 @@ import Display from "../Display/Display";
 
 class Calculator extends Component {
   state = {
-    displayValue: 0,
+    displayValue: "0",
     numbers: [],
     operators: [],
     selectedOperator: "",
@@ -14,7 +14,7 @@ class Calculator extends Component {
   render() {
     return (
       <div className="calculator-container">
-        <Display />
+        <Display displayValue={this.state.displayValue}/>
       </div>
     );
   }

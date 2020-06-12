@@ -95,3 +95,5 @@ npm i -D enzyme-to-json
 
 Wrote a snapshot test for App. using the `toMatchSnapshot` method.
 
+[Snapshot docs](https://jestjs.io/docs/en/snapshot-testing).
+

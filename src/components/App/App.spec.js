@@ -4,6 +4,11 @@ import App from './App';
 import Calculator from '../Calculator/Calculator'
 
 describe('App', () => {
+  it('renders correctly', () => {
+    const wrapper = shallow(<App />);
+    expect(wrapper).toMatchSnapshot()
+  });
+
   it('renders a div', () => {
     const wrapper = shallow(<App />);
     expect(wrapper.find('div').length).toEqual(1);

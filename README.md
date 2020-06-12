@@ -82,3 +82,16 @@ Calculator test green.
 - Imported and rendered Calculator in App.
 
 App test Green.
+
+### Snapshot Testing for App
+
+Snapshots are written after a component has been written, and help alert you to unexpected changes in a rendered component.
+
+This is done with the `enzyme-to-json` package.
+
+```shell
+npm i -D enzyme-to-json
+```
+
+Wrote a snapshot test for App. using the `toMatchSnapshot` method.
+

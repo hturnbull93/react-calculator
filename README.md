@@ -68,3 +68,7 @@ Import and render App in `index.js`.
 In `App.spec.js` wrote a test that App renders a Calculator component. Red
 
 The test uses Enzyme's `containsMatching Element` method.
+
+In `src/components/Calculator/Calculator.spec.js`, wrote a test that Calculator renders a div. Red.
+
+

@@ -99,5 +99,8 @@ Wrote a snapshot test for App. using the `toMatchSnapshot` method.
 
 ### Calculator Renders Display
 
-In `Calculator.spec.js` wrote a test that Calculator should render the Display component.
+In `Calculator.spec.js` wrote a test that Calculator should render the Display component. Red.
+
+In `src/components/Display/Display.spec.js`, wrote a test that Display renders a div. Red.
+
 

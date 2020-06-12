@@ -180,3 +180,5 @@ Added some css for the keypad also.
 ### Keypad Renders a Key
 
 Wrote a test for Keypad to render a Key component. Red.
+
+Wrote a test for Key 

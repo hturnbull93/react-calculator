@@ -134,3 +134,4 @@ Wrote a test that Display should render the value of the displayValue prop. Red.
 
 Wrote a Display snapshot test.
 
+Also added some CSS to Display.

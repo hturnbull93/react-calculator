@@ -9,4 +9,12 @@ describe("Key", () => {
     );
     expect(wrapper.find("div").length).toEqual(1);
   });
+
+  it("renders the keyValue", () => {
+    const wrapper = shallow(
+      <Key keyAction={jest.fn()} keyType={""} keyValue={""} />
+    );
+    wrapper.setProps({ keyValue: "test" });
+    expect(wrapper.text()).toEqual("test");
+  });
 });

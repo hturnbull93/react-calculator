@@ -127,3 +127,8 @@ Green.
 ### Display Renders displayValue
 
 Wrote a test that Display should render the value of the displayValue prop. Red.
+
+- Added a paragraph to render the displayValue in Display.
+
+### Display Snapshot
+

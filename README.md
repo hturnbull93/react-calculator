@@ -140,3 +140,15 @@ Also added some CSS to Display.
 
 Wrote a test that Calculator renders a Keypad Component. Red.
 
+Wrote a test that Keypad renders a div, specifying all its props. Red.
+
+- Wrote Keypad stateful function component returning a div.
+- This has propTypes specified in line with the props specified in the test.
+
+Keypad test green.
+
+- Imported Keypad into Calculator.
+- Render Keypad passing props required by test.
+- Add empty functions in Calculator for those passed as props to Keypad.
+
+Calculator test green.

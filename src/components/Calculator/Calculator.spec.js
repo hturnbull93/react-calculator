@@ -1,6 +1,7 @@
 import React from "react";
 import { shallow } from "enzyme";
 import Calculator from "./Calculator";
+import Display from '../Display/Display';
 
 describe("Calculator", () => {
   it("renders a div", () => {

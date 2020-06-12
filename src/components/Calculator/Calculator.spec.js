@@ -5,6 +5,11 @@ import Display from "../Display/Display";
 import Keypad from "../Keypad/Keypad";
 
 describe("Calculator", () => {
+  it('renders correctly', () => {
+    const wrapper = shallow(<Calculator />);
+    expect(wrapper).toMatchSnapshot();
+  });
+
   it("renders a div", () => {
     const wrapper = shallow(<Calculator />);
     expect(wrapper.find("div").length).toEqual(1);

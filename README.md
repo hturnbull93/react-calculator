@@ -152,3 +152,7 @@ Keypad test green.
 - Add empty functions in Calculator for those passed as props to Keypad.
 
 Calculator test green.
+
+### Calculator Snapshot
+
+Wrote a Calculator snapshot test.

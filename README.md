@@ -52,3 +52,13 @@ Add some base styling also.
 In `src/components/App/App.spec.js`, wrote a test that App renders a div. Red.
 
 The test uses Enzyme's shallow render function.
+
+In `src/components/App/App.jsx`:
+
+- Added a functional component App, that returns a div with className "app-container".
+
+Green.
+
+Also added some css to `src/components/App/App.css`.
+
+

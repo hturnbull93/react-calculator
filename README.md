@@ -35,3 +35,6 @@ npm i -D enzyme
 ```shell
 npm i -D react-test-renderer enzyme-adapter-react-16
 ```
+
+Add some base styling also.
+

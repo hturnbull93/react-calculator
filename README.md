@@ -123,3 +123,7 @@ The fact that the value comes from the instance means that just passing in the s
 - Calculator passes a prop to Display `displayValue` from its state`.
 
 Green.
+
+### Display Renders displayValue
+
+Wrote a test that Display should render the value of the displayValue prop. Red.

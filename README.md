@@ -174,3 +174,5 @@ Wrote a test that Keypad renders the operators passed from the operators prop. R
 - Keypad function maps through operators prop and returns p elements with the operator as its key and content.
 - These are returned, within another div of class "operators-container".
 - Adjusted previous test to reflect the fact there are three divs now.
+
+Added some css for the keypad also.

@@ -47,3 +47,8 @@ configure({ adapter: new Adapter() });
 
 Add some base styling also.
 
+### Rendering App
+
+In `src/components/App/App.spec.js`, wrote a test that App renders a div. Red.
+
+The test uses Enzyme's shallow render function.

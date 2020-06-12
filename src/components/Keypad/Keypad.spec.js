@@ -16,7 +16,7 @@ describe('Keypad', () => {
 
   it('renders the values of operators', () => {
     const wrapper = shallowKeypad()
-    wrapper.setProps({numbers: ['+', '-', '*', '/']});
+    wrapper.setProps({operators: ['+', '-', '*', '/']});
     expect(wrapper.find('.operators-container').text()).toEqual('+-*/');
   });
 });

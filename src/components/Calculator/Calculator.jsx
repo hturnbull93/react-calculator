@@ -1,18 +1,17 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
+import "./Calculator.css";
 
 class Calculator extends Component {
-  state = { 
+  state = {
     displayValue: 0,
     numbers: [],
     operators: [],
-    selectedOperator: '',
-    storedValue: ''
-  }
+    selectedOperator: "",
+    storedValue: "",
+  };
 
-  render() { 
-    return ( 
-      <div className="calculator-container"></div>
-    );
+  render() {
+    return <div className="calculator-container"></div>;
   }
 }
 

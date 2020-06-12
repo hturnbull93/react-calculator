@@ -27,6 +27,6 @@ describe("Calculator", () => {
         updateDisplay={wrapper.instance().updateDisplay}
       />
     )
-    expect(wrapper.containsAllMatchingElements(keypad)).toEqual(true);
+    expect(wrapper.containsMatchingElement(keypad)).toEqual(true);
   });
 });

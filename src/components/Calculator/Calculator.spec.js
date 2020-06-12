@@ -7,4 +7,9 @@ describe("Calculator", () => {
     const wrapper = shallow(<Calculator />);
     expect(wrapper.find("div").length).toEqual(1);
   });
+  
+  it('renders the Display Component', () => {
+    const wrapper = shallow(<Calculator />);
+    expect(wrapper.containsMatchingElement(<Display />)).toEqual(true);
+  });
 });

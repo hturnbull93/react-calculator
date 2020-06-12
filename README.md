@@ -97,3 +97,6 @@ Wrote a snapshot test for App. using the `toMatchSnapshot` method.
 
 [Snapshot docs](https://jestjs.io/docs/en/snapshot-testing).
 
+### Calculator Renders Display
+
+In `Calculator.spec.js` wrote a test that Calculator should render the Display component

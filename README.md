@@ -118,4 +118,8 @@ To fix the warning from the prop types requirement, `displayValue` can be passed
 
 Updated the Calculator renders Display test matching element to be a Display component with the prop `displayValue` passed. `displayValue` is the Calculator instance's `displayValue` in its state. Red.
 
-- 
+The fact that the value comes from the instance means that just passing in the same thing ("0"), won't pass the test.
+
+- Calculator passes a prop to Display `displayValue` from its state`.
+
+Green.

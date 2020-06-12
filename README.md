@@ -181,4 +181,6 @@ Added some css for the keypad also.
 
 Wrote a test for Keypad to render a Key component. Red.
 
-Wrote a test for Key 
+Wrote a test for Key taking props that it should render a div. Red.
+
+- 

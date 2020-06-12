@@ -28,5 +28,10 @@ Enzyme, and its dependencies to work with React.
 npm i -D enzyme
 ```
 
+`react-test-renderer` is a package that allows React components to be rendered as pure JS objects, without interacting with the DOM.
 
+`enzyme-adapter-react-16` is needed to integrate Enzyme.
 
+```shell
+npm i -D react-test-renderer enzyme-adapter-react-16
+```

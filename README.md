@@ -111,3 +111,7 @@ In `Display.jsx`:
 Display test green.
 
 - Imported and rendered Display in Calculator.
+
+Calculator test green.
+
+To fix the warning from the prop types requirement, `displayValue` can be passed with an empty string for now.

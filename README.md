@@ -36,5 +36,14 @@ npm i -D enzyme
 npm i -D react-test-renderer enzyme-adapter-react-16
 ```
 
+Enzyme is configured for testing in `setupTest.js`:
+
+```js
+import { configure } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
+
+configure({ adapter: new Adapter() });
+```
+
 Add some base styling also.
 

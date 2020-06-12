@@ -71,4 +71,9 @@ The test uses Enzyme's `containsMatching Element` method.
 
 In `src/components/Calculator/Calculator.spec.js`, wrote a test that Calculator renders a div. Red.
 
+In `src/components/Calculator/Calculator.jsx`:
+
+- Added a Calculator component.
+- Renders div.
+- Also added some state for later on.
 

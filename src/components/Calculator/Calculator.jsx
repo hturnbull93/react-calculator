@@ -7,11 +7,12 @@ class Calculator extends Component {
     operators: [],
     selectedOperator: '',
     storedValue: ''
-   }
+  }
+
   render() { 
     return ( 
       <div className="calculator-container"></div>
-     );
+    );
   }
 }
 

@@ -59,6 +59,12 @@ In `src/components/App/App.jsx`:
 
 Green.
 
-Also added some css to `src/components/App/App.css`.
+Also added some css to `src/components/App/App.css`, imported in to `App.jsx`
 
+Import and render App in `index.js`.
 
+### App Renders Calculator
+
+In `App.spec.js` wrote a test that App renders a Calculator component. Red
+
+The test uses Enzyme's `containsMatching Element` method.

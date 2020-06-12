@@ -166,3 +166,11 @@ Wrote a test that Keypad renders the numbers passed from the numbers prop. Red.
 - Adjusted previous test to reflect the fact there are two divs now.
 
 Green.
+
+### Keypad renders Operators
+
+Wrote a test that Keypad renders the operators passed from the operators prop. Red.
+
+- Keypad function maps through operators prop and returns p elements with the operator as its key and content.
+- These are returned, within another div of class "operators-container".
+- Adjusted previous test to reflect the fact there are three divs now.

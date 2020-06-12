@@ -3,9 +3,9 @@ import { shallow } from 'enzyme';
 import Keypad from './Keypad';
 
 describe('Keypad', () => {
-  it('renders 2 divs', () => {
+  it('renders 3 divs', () => {
     const wrapper = shallowKeypad()
-    expect(wrapper.find('div').length).toEqual(2);
+    expect(wrapper.find('div').length).toEqual(3);
   });
   
   it('renders the values of numbers', () => {

@@ -156,3 +156,13 @@ Calculator test green.
 ### Calculator Snapshot
 
 Wrote a Calculator snapshot test.
+
+### Keypad Renders Numbers
+
+Wrote a test that Keypad renders the numbers passed from the numbers prop. Red.
+
+- Keypad function maps through numbers prop and returns p elements with the number as its key and content.
+- These are returned, within another div of class "numbers-container".
+- Adjusted previous test to reflect the fact there are two divs now.
+
+Green.

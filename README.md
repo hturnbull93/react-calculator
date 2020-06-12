@@ -142,7 +142,7 @@ Wrote a test that Calculator renders a Keypad Component. Red.
 
 Wrote a test that Keypad renders a div, specifying all its props. Red.
 
-- Wrote Keypad stateful function component returning a div.
+- Wrote Keypad stateless function component returning a div.
 - This has propTypes specified in line with the props specified in the test.
 
 Keypad test green.
@@ -183,4 +183,11 @@ Wrote a test for Keypad to render a Key component. Red.
 
 Wrote a test for Key taking props that it should render a div. Red.
 
-- 
+- Key is a stateless functional component that renders a div.
+- Its props are required using PropTypes.
+
+Key test green.
+
+- Imported and rendered a Key in Keypad.
+
+Keypad test green.

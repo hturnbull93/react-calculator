@@ -103,4 +103,11 @@ In `Calculator.spec.js` wrote a test that Calculator should render the Display c
 
 In `src/components/Display/Display.spec.js`, wrote a test that Display renders a div. Red.
 
+In `Display.jsx`:
 
+- Added a stateless function component that takes `displayValue` as a prop.
+- PropTypes is used to specify that `displayValue` is a string that is required as a prop to the component (raises a warning if it is not found).
+
+Display test green.
+
+- Imported and rendered Display in Calculator.

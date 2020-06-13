@@ -88,5 +88,12 @@ describe("Calculator", () => {
       wrapper.instance().updateDisplay("ce");
       expect(wrapper.state("displayValue")).toEqual("5");
     });
+
+    it('prevents multiple instances of "." in displayValue', () => {
+      const wrapper = shallow(<Calculator />);
+      wrapper.instance().updateDisplay(".");
+      wrapper.instance().updateDisplay(".");
+      expect(wrapper.state("displayValue")).toEqual(".");
+    });
   });
 });

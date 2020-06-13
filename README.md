@@ -308,3 +308,9 @@ Wrote a test that it sets displayValue to "0". Red.
 - setState sets displayValue to "0".
 
 Green.
+
+Wrote a test that it does not update storedValue if selectedOperator already set. Red.
+
+- Added if else logic checking for the storedValue being an empty string.
+
+Green.

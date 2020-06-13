@@ -13,11 +13,22 @@ class Calculator extends Component {
   };
 
   callOperator = () => {
-    let { storedValue, displayValue } = this.state;
+    let { storedValue, displayValue, selectedOperator } = this.state;
     displayValue = parseInt(displayValue);
     storedValue = parseInt(storedValue);
+    let result;
 
-    const result = storedValue + displayValue
+    switch (selectedOperator) {
+      case "+":
+        result = storedValue + displayValue;
+        break;
+      case "-":
+        result = storedValue - displayValue;
+        break;
+
+      default:
+        return;
+    }
     this.setState({ displayValue: result.toString() });
   };
 

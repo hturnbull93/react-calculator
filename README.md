@@ -230,13 +230,18 @@ Added the numbers 0 to 9, . and ce to the Calculator's numbers state array.
 
 Added the operators to the Calculators operators state array.
 
-### Click Event Tests
+### Number Key Clicks Call updateDisplay
 
-Wrote a test that updateDisplay is called when a number key is clicked.
+Wrote a test that updateDisplay is called when a number key is clicked. Red.
 
-For functional testing of the Calculator, it is mounted. The jest `spyOn` method is used to track calls of the wrapper instance's `updateDisplay` method. Enzyme's `simulate("click")` method is used to perform the click.
+For functional testing of the Calculator, it is mounted. The jest `spyOn` method is used to track calls of the wrapper instance's `updateDisplay` method. The instance is caused to take on the spy with the `forceUpdate` method. Enzyme's `simulate("click")` method is used to perform the click.
 
 - The test finds no class with ".number-key" to click, so in `Key.jsx` updated the wrapping div to have a class of the passed keyType prop.
 - Set the onClick action for the key as an anonymous arrow function returning the keyAction prop function (in this case it is passed calculator's `updateDisplay` method via Keypad), passing the keyValue prop as an argument.
 
 Green.
+
+### Operator Key Clicks Call setOperator
+
+Wrote a test that setOperator is called when an operator key is clicked.
+

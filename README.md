@@ -223,3 +223,9 @@ Also fixed the test that now finds 4 divs instead of three.
 ### Keypad Snapshot
 
 Wrote a Keypad snapshot test.
+
+### Updating Calculator State
+
+Added the numbers 0 to 9, . and ce to the Calculator's numbers state array.
+
+Added the operators to the Calculators operators state array.

@@ -6,26 +6,20 @@ import Keypad from "../Keypad/Keypad";
 class Calculator extends Component {
   state = {
     displayValue: "0",
-    numbers: [],
-    operators: [],
+    numbers: ["9", "8", "7", "6", "5", "4", "3", "2", "1", ".", "0", "ce"],
+    operators: ["/", "x", "-", "+"],
     selectedOperator: "",
     storedValue: "",
   };
 
-  callOperator = () => {
-    
-  }
+  callOperator = () => {};
 
-  setOperator = () => {
+  setOperator = () => {};
 
-  }
-
-  updateDisplay = () => {
-
-  }
+  updateDisplay = () => {};
 
   render() {
-    const { displayValue , numbers, operators } = this.state;
+    const { displayValue, numbers, operators } = this.state;
     return (
       <div className="calculator-container">
         <Display displayValue={displayValue} />

@@ -166,8 +166,8 @@ describe("Calculator", () => {
 
     it("performs division", () => {
       const wrapper = shallow(<Calculator />);
-      wrapper.setState({ storedValue: "2" });
-      wrapper.setState({ displayValue: "3" });
+      wrapper.setState({ storedValue: "3" });
+      wrapper.setState({ displayValue: "2" });
       wrapper.setState({ selectedOperator: "/" });
       wrapper.instance().callOperator();
       expect(wrapper.state("displayValue")).toEqual("1.5");

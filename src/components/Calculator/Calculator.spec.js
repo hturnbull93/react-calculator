@@ -1,11 +1,11 @@
 import React from "react";
-import { shallow } from "enzyme";
+import { shallow, mount } from "enzyme";
 import Calculator from "./Calculator";
 import Display from "../Display/Display";
 import Keypad from "../Keypad/Keypad";
 
 describe("Calculator", () => {
-  it('renders correctly', () => {
+  it("renders correctly", () => {
     const wrapper = shallow(<Calculator />);
     expect(wrapper).toMatchSnapshot();
   });
@@ -17,11 +17,13 @@ describe("Calculator", () => {
 
   it("renders the Display Component", () => {
     const wrapper = shallow(<Calculator />);
-    const display = <Display displayValue={wrapper.instance().state.displayValue} />;
+    const display = (
+      <Display displayValue={wrapper.instance().state.displayValue} />
+    );
     expect(wrapper.containsMatchingElement(display)).toEqual(true);
   });
 
-  it('renders the Keypad Component', () => {
+  it("renders the Keypad Component", () => {
     const wrapper = shallow(<Calculator />);
     const keypad = (
       <Keypad
@@ -31,7 +33,18 @@ describe("Calculator", () => {
         setOperator={wrapper.instance().setOperator}
         updateDisplay={wrapper.instance().updateDisplay}
       />
-    )
+    );
     expect(wrapper.containsMatchingElement(keypad)).toEqual(true);
+  });
+
+  describe("Functionality", () => {
+    it("updateDisplay is called when a number key is clicked", () => {
+      const wrapper = mount(<Calculator />);
+      const spy = jest.spyOn(wrapper.instance(), "updateDisplay");
+      wrapper.instance().forceUpdate();
+      expect(spy).toHaveBeenCalledTimes(0)
+      wrapper.find('.number-key').first().simulate('click');
+      expect(spy).toHaveBeenCalledTimes(1)
+    });
   });
 });

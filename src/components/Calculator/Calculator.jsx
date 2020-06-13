@@ -16,7 +16,9 @@ class Calculator extends Component {
 
   setOperator = () => {};
 
-  updateDisplay = () => {};
+  updateDisplay = (displayValue) => {
+    this.setState({ displayValue })
+  };
 
   render() {
     const { displayValue, numbers, operators } = this.state;

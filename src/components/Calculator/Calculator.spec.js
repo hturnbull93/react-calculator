@@ -125,5 +125,15 @@ describe("Calculator", () => {
       wrapper.instance().setOperator("+");
       expect(wrapper.state("displayValue")).toEqual("0");
     });
+    
+    it('does not update storedValue if selectedOperator already set', () => {
+      const wrapper = shallow(<Calculator />);
+      wrapper.setState({ displayValue: '5' });
+      wrapper.instance().setOperator('+');
+      expect(wrapper.state('storedValue')).toEqual('5');
+      wrapper.instance().setOperator('-');
+      expect(wrapper.state('storedValue')).toEqual('5');
+    });
+  
   });
 });

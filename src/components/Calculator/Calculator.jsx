@@ -25,6 +25,9 @@ class Calculator extends Component {
       case "-":
         result = storedValue - displayValue;
         break;
+      case "x":
+        result = storedValue * displayValue;
+        break;
 
       default:
         return;

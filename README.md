@@ -329,3 +329,12 @@ Wrote a test that callOperator performs addition. Red.
 - Set state display value to the result converted to a string.
 
 Wrote a test that callOperator performs subtraction. Red.
+
+- Added a switch based on the selected operator to either add or subtract.
+- The default case returns from the function to prevent breaking other tests.
+
+Wrote a test that callOperator performs multiplication. Red.
+
+- Added a switch case for "x" that multiplies.
+
+Green.

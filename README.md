@@ -314,3 +314,10 @@ Wrote a test that it does not update storedValue if selectedOperator already set
 - Added if else logic checking for the storedValue being an empty string.
 
 Green.
+
+Refactor:
+
+- Destructure constants from state.
+
+### callOperator Functionality
+

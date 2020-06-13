@@ -15,14 +15,15 @@ class Calculator extends Component {
   callOperator = () => {};
 
   setOperator = (operator) => {
-    if (this.state.storedValue !== "") {
+    const { storedValue, displayValue } = this.state;
+    if (storedValue !== "") {
       this.setState({
         selectedOperator: operator,
       });
     } else {
       this.setState({
         selectedOperator: operator,
-        storedValue: this.state.displayValue,
+        storedValue: displayValue,
         displayValue: "0",
       });
     }

@@ -134,6 +134,5 @@ describe("Calculator", () => {
       wrapper.instance().setOperator('-');
       expect(wrapper.state('storedValue')).toEqual('5');
     });
-  
   });
 });

@@ -340,3 +340,8 @@ Wrote a test that callOperator performs multiplication. Red.
 Green.
 
 Wrote a test that callOperator performs division. Red.
+
+- Added a case for division to the switch.
+- result is set with the parseFloat of the division of the stored numbers.
+
+Green.

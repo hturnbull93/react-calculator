@@ -28,6 +28,9 @@ class Calculator extends Component {
       case "x":
         result = storedValue * displayValue;
         break;
+      case "/":
+        result = parseFloat(displayValue / storedValue)
+        break;
 
       default:
         return;

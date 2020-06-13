@@ -46,5 +46,14 @@ describe("Calculator", () => {
       wrapper.find('.number-key').first().simulate('click');
       expect(spy).toHaveBeenCalledTimes(1)
     });
+
+    it("setOperator is called when an operator key is clicked", () => {
+      const wrapper = mount(<Calculator />);
+      const spy = jest.spyOn(wrapper.instance(), "setOperator");
+      wrapper.instance().forceUpdate();
+      expect(spy).toHaveBeenCalledTimes(0)
+      wrapper.find('.operator-key').first().simulate('click');
+      expect(spy).toHaveBeenCalledTimes(1)
+    });
   });
 });

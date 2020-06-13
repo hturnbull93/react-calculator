@@ -243,5 +243,6 @@ Green.
 
 ### Operator Key Clicks Call setOperator
 
-Wrote a test that setOperator is called when an operator key is clicked.
+Wrote a test that setOperator is called when an operator key is clicked. Green.
 
+This test is already passing due to the previous change.

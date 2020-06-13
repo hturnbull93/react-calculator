@@ -1,13 +1,14 @@
 import React from "react";
 import { shallow, mount } from "enzyme";
+import renderer from 'react-test-renderer';
 import Calculator from "./Calculator";
 import Display from "../Display/Display";
 import Keypad from "../Keypad/Keypad";
 
 describe("Calculator", () => {
   it("renders correctly", () => {
-    const wrapper = shallow(<Calculator />);
-    expect(wrapper).toMatchSnapshot();
+    const tree = renderer.create(<Calculator />).toJSON();
+    expect(tree).toMatchSnapshot();
   });
 
   it("renders a div", () => {

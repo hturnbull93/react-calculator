@@ -1,11 +1,12 @@
 import React from "react";
 import { shallow } from "enzyme";
+import renderer from "react-test-renderer";
 import Display from "./Display";
 
 describe("Display", () => {
   it("renders correctly", () => {
-    const wrapper = shallow(<Display displayValue={""} />);
-    expect(wrapper).toMatchSnapshot();
+    const tree = renderer.create(<Display displayValue={""} />).toJSON();
+    expect(tree).toMatchSnapshot();
   });
 
   it("renders a div", () => {

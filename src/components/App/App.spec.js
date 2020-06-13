@@ -1,12 +1,13 @@
 import React from "react";
 import { shallow } from "enzyme";
+import renderer from 'react-test-renderer';
 import App from "./App";
 import Calculator from "../Calculator/Calculator";
 
 describe("App", () => {
   it("renders correctly", () => {
-    const wrapper = shallow(<App />);
-    expect(wrapper).toMatchSnapshot();
+    const tree = renderer.create(<App />).toJSON();
+    expect(tree).toMatchSnapshot();
   });
 
   it("renders a div", () => {

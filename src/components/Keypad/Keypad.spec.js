@@ -1,11 +1,22 @@
 import React from "react";
 import { shallow, mount } from "enzyme";
+import renderer from "react-test-renderer";
 import Keypad from "./Keypad";
 
 describe("Keypad", () => {
   it("renders correctly", () => {
-    const wrapper = shallowKeypad();
-    expect(wrapper).toMatchSnapshot();
+    const tree = renderer
+      .create(
+        <Keypad
+          callOperator={jest.fn()}
+          numbers={[]}
+          operators={[]}
+          setOperator={jest.fn()}
+          updateDisplay={jest.fn()}
+        />
+      )
+      .toJSON();
+    expect(tree).toMatchSnapshot();
   });
 
   it("renders 4 divs", () => {
@@ -59,4 +70,3 @@ function mountKeypad() {
     />
   );
 }
-

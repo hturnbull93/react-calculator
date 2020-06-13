@@ -1,3 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Key renders correctly 1`] = `ShallowWrapper {}`;
+exports[`Key renders correctly 1`] = `
+<div
+  className="key-container "
+  onClick={[Function]}
+>
+  <p
+    className="key-value"
+  >
+    
+  </p>
+</div>
+`;

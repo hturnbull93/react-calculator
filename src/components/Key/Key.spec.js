@@ -1,13 +1,14 @@
 import React from "react";
 import { shallow } from "enzyme";
+import renderer from 'react-test-renderer';
 import Key from "./Key";
 
 describe("Key", () => {
-  it('renders correctly', () => {
-    const wrapper = shallow(
-      <Key keyAction={jest.fn()} keyType={""} keyValue={""} />
-    );
-    expect(wrapper).toMatchSnapshot()
+  it("renders correctly", () => {
+    const tree = renderer
+      .create(<Key keyAction={jest.fn()} keyType={""} keyValue={""} />)
+      .toJSON();
+    expect(tree).toMatchSnapshot();
   });
 
   it("renders a div", () => {

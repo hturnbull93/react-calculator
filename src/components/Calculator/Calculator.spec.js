@@ -125,14 +125,25 @@ describe("Calculator", () => {
       wrapper.instance().setOperator("+");
       expect(wrapper.state("displayValue")).toEqual("0");
     });
-    
-    it('does not update storedValue if selectedOperator already set', () => {
+
+    it("does not update storedValue if selectedOperator already set", () => {
       const wrapper = shallow(<Calculator />);
-      wrapper.setState({ displayValue: '5' });
-      wrapper.instance().setOperator('+');
-      expect(wrapper.state('storedValue')).toEqual('5');
-      wrapper.instance().setOperator('-');
-      expect(wrapper.state('storedValue')).toEqual('5');
+      wrapper.setState({ displayValue: "5" });
+      wrapper.instance().setOperator("+");
+      expect(wrapper.state("storedValue")).toEqual("5");
+      wrapper.instance().setOperator("-");
+      expect(wrapper.state("storedValue")).toEqual("5");
+    });
+  });
+
+  describe("callOperator", () => {
+    it("updates displayValue with sum of storedValue and displayValue", () => {
+      const wrapper = shallow(<Calculator />);
+      wrapper.setState({ storedValue: "3" });
+      wrapper.setState({ displayValue: "2" });
+      wrapper.setState({ selectedOperator: "+" });
+      wrapper.instance().callOperator();
+      expect(wrapper.state("displayValue")).toEqual("5");
     });
   });
 });

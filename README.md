@@ -321,3 +321,5 @@ Refactor:
 
 ### callOperator Functionality
 
+Wrote a test that callOperator updates displayValue with sum of storedValue and displayValue. Red.
+

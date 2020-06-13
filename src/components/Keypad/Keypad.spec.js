@@ -1,5 +1,5 @@
 import React from "react";
-import { shallow } from "enzyme";
+import { shallow, mount } from "enzyme";
 import Keypad from "./Keypad";
 
 describe("Keypad", () => {

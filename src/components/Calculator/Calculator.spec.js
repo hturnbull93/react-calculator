@@ -209,7 +209,7 @@ describe("Calculator", () => {
       expect(wrapper.state("displayValue")).toEqual("0");
     });
 
-    it('guards against infinity', () => {
+    it("guards against infinity", () => {
       const wrapper = shallow(<Calculator />);
       wrapper.setState({ storedValue: "7" });
       wrapper.setState({ displayValue: "0" });
@@ -218,7 +218,7 @@ describe("Calculator", () => {
       expect(wrapper.state("displayValue")).toEqual("0");
     });
 
-    it('guards against unknown selectedOperator', () => {
+    it("guards against unknown selectedOperator", () => {
       const wrapper = shallow(<Calculator />);
       wrapper.setState({ storedValue: "7" });
       wrapper.setState({ displayValue: "10" });

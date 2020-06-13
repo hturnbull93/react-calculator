@@ -18,6 +18,7 @@ class Calculator extends Component {
     this.setState({
       selectedOperator: operator,
       storedValue: this.state.displayValue,
+      displayValue: "0",
     });
   };
 

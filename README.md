@@ -305,3 +305,6 @@ Green.
 
 Wrote a test that it sets displayValue to "0". Red.
 
+- setState sets displayValue to "0".
+
+Green.

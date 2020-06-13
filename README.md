@@ -323,3 +323,7 @@ Refactor:
 
 Wrote a test that callOperator updates displayValue with sum of storedValue and displayValue. Red.
 
+- Destructure storedValue and displayValue from state.
+- Parse them to integers.
+- Add them.
+- Set state display value to the result converted to a string.

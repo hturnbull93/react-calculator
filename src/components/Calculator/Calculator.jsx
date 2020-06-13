@@ -12,7 +12,14 @@ class Calculator extends Component {
     storedValue: "",
   };
 
-  callOperator = () => {};
+  callOperator = () => {
+    let { storedValue, displayValue } = this.state;
+    displayValue = parseInt(displayValue);
+    storedValue = parseInt(storedValue);
+
+    const result = storedValue + displayValue
+    this.setState({ displayValue: result.toString() });
+  };
 
   setOperator = (operator) => {
     const { storedValue, displayValue } = this.state;

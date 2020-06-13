@@ -137,7 +137,7 @@ describe("Calculator", () => {
   });
 
   describe("callOperator", () => {
-    it("updates displayValue with sum of storedValue and displayValue", () => {
+    it("performs addition", () => {
       const wrapper = shallow(<Calculator />);
       wrapper.setState({ storedValue: "3" });
       wrapper.setState({ displayValue: "2" });

@@ -14,7 +14,9 @@ class Calculator extends Component {
 
   callOperator = () => {};
 
-  setOperator = () => {};
+  setOperator = (operator) => {
+    this.setState({ selectedOperator: operator });
+  };
 
   updateDisplay = (value) => {
     let { displayValue } = this.state;

@@ -292,3 +292,8 @@ Refactors:
 ### setOperator Functionality
 
 Wrote a test that setOperator updates the value of selectedOperator. Red.
+
+- setOperator sets state with the passed value.
+
+Green.
+

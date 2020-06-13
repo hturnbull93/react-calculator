@@ -288,3 +288,7 @@ Refactors:
 
 - Assign newDisplayValue using a ternary operator instead of if else blocks.
 - Covert other blocks to single line statements.
+
+### setOperator Functionality
+
+Wrote a test that setOperator updates the value of selectedOperator. Red.

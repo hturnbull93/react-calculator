@@ -163,5 +163,14 @@ describe("Calculator", () => {
       wrapper.instance().callOperator();
       expect(wrapper.state("displayValue")).toEqual("6");
     });
+
+    it("performs division", () => {
+      const wrapper = shallow(<Calculator />);
+      wrapper.setState({ storedValue: "2" });
+      wrapper.setState({ displayValue: "3" });
+      wrapper.setState({ selectedOperator: "/" });
+      wrapper.instance().callOperator();
+      expect(wrapper.state("displayValue")).toEqual("1.5");
+    });
   });
 });

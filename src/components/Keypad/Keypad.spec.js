@@ -9,13 +9,13 @@ describe("Keypad", () => {
   });
 
   it("renders the values of numbers", () => {
-    const wrapper = shallowKeypad();
+    const wrapper = mountKeypad();
     wrapper.setProps({ numbers: ["0", "1", "2"] });
     expect(wrapper.find(".numbers-container").text()).toEqual("012");
   });
 
   it("renders the values of operators", () => {
-    const wrapper = shallowKeypad();
+    const wrapper = mountKeypad();
     wrapper.setProps({ operators: ["+", "-", "*", "/"] });
     expect(wrapper.find(".operators-container").text()).toEqual("+-*/");
   });
@@ -42,3 +42,16 @@ function shallowKeypad() {
     />
   );
 }
+
+function mountKeypad() {
+  return mount(
+    <Keypad
+      callOperator={jest.fn()}
+      numbers={[]}
+      operators={[]}
+      setOperator={jest.fn()}
+      updateDisplay={jest.fn()}
+    />
+  );
+}
+

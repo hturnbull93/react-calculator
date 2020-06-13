@@ -205,3 +205,15 @@ Added and imported css for Key.
 ### Key Snapshot
 
 Wrote a Key snapshot test.
+
+### Refactor Keypad to Use Keys
+
+The Keypad should render a Key for each of the numbers and operators, and also for the `=` key.
+
+Wrote a test that the Keypad renders a Key component for each of numbers and operators, and submit. Red.
+
+- Switched out the p tags mapped from numbers and operators to Key components.
+- Passed in the relevant keyAction, key, keyValue props to Keys.
+- Wrapped the last non mapped key wth a div class of "submit-container".
+
+The other tests that check for the rendered values of operators and numbers now break because of shallow rendering not rendering the key that now renders the value. Updated these tests to use mount instead of shallow.

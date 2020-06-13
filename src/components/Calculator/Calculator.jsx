@@ -29,6 +29,9 @@ class Calculator extends Component {
     } else {
       newDisplayValue = displayValue.concat(value);
     }
+    if (newDisplayValue === "") {
+      newDisplayValue = "0"
+    }
     this.setState({ displayValue: newDisplayValue });
   };
 

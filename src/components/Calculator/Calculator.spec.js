@@ -145,5 +145,14 @@ describe("Calculator", () => {
       wrapper.instance().callOperator();
       expect(wrapper.state("displayValue")).toEqual("5");
     });
+
+    it("performs subtraction", () => {
+      const wrapper = shallow(<Calculator />);
+      wrapper.setState({ storedValue: "6" });
+      wrapper.setState({ displayValue: "4" });
+      wrapper.setState({ selectedOperator: "-" });
+      wrapper.instance().callOperator();
+      expect(wrapper.state("displayValue")).toEqual("2");
+    });
   });
 });

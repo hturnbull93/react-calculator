@@ -6,7 +6,7 @@ I have gained familiarity with Jest and Enzyme working on other projects, though
 
 ## Brief
 
-The calculator ha the following properties:
+The calculator has the following properties:
 
 - Can do four operations with keys for each: `+`, `-`, `x`, and `%`, to signal which operation to perform.
 - Has 12 keys that update the display: `0` to `9` (number keys), `.` (for decimals), and `ce` (for backspace).
@@ -191,3 +191,14 @@ Key test green.
 - Imported and rendered a Key in Keypad.
 
 Keypad test green.
+
+### Key Renders keyValue
+
+Wrote a test that Key renders the prop keyValue. Red.
+
+- Key renders a p tag with the keyValue passed.
+
+Green.
+
+Added and imported css for Key.
+

@@ -95,5 +95,12 @@ describe("Calculator", () => {
       wrapper.instance().updateDisplay(".");
       expect(wrapper.state("displayValue")).toEqual(".");
     });
+    
+    it('sets displayValue to "0" if last character deleted', () => {
+      const wrapper = shallow(<Calculator />);
+      wrapper.instance().updateDisplay('ce');
+      expect(wrapper.state('displayValue')).toEqual('0');
+    });
+
   });
 });

@@ -280,4 +280,4 @@ Wrote a test that passing "." when there is already one will prevent it being ad
 
 Green.
 
-
+Wrote a test that if the last character is deleted the displayValue is "0". Red

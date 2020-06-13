@@ -18,6 +18,9 @@ class Calculator extends Component {
     storedValue = parseInt(storedValue);
     let result;
 
+    if (isNaN(displayValue) || isNaN(storedValue))
+      return this.setState({ displayValue: "0" });
+
     switch (selectedOperator) {
       case "+":
         result = storedValue + displayValue;
@@ -29,7 +32,7 @@ class Calculator extends Component {
         result = storedValue * displayValue;
         break;
       case "/":
-        result = parseFloat(displayValue / storedValue)
+        result = parseFloat(displayValue / storedValue);
         break;
 
       default:

@@ -347,3 +347,7 @@ Wrote a test that callOperator performs division. Red.
 Green.
 
 Wrote a test that callOperator sets displayValue to "0" if result is NaN. Red.
+
+- added guard statement that checks for displayValue and storedValue being NaN, and set state displayValue to "0".
+
+Green.

@@ -287,5 +287,4 @@ Wrote a test that if the last character is deleted the displayValue is "0". Red.
 Refactors:
 
 - Assign newDisplayValue using a ternary operator instead of if else blocks.
-- 
-
+- Covert other blocks to single line statements.

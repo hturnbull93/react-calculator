@@ -21,14 +21,9 @@ class Calculator extends Component {
     if (value === "." && displayValue.includes(".")) return
 
     let newDisplayValue
-    if (displayValue === "0") {
-      displayValue = "";
-    }
+    if (displayValue === "0") displayValue = "";
     newDisplayValue = value === "ce" ? displayValue.slice(0, -1) : displayValue.concat(value)
-
-    if (newDisplayValue === "") {
-      newDisplayValue = "0"
-    }
+    if (newDisplayValue === "") newDisplayValue = "0"
     this.setState({ displayValue: newDisplayValue });
   };
 

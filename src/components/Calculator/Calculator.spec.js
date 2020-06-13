@@ -39,7 +39,7 @@ describe("Calculator", () => {
   });
 
   describe("Functionality", () => {
-    it("updateDisplay is called when a number key is clicked", () => {
+    it("calls updateDisplay when a number key is clicked", () => {
       const wrapper = mount(<Calculator />);
       const spy = jest.spyOn(wrapper.instance(), "updateDisplay");
       wrapper.instance().forceUpdate();
@@ -48,7 +48,7 @@ describe("Calculator", () => {
       expect(spy).toHaveBeenCalledTimes(1)
     });
 
-    it("setOperator is called when an operator key is clicked", () => {
+    it("calls setOperator when an operator key is clicked", () => {
       const wrapper = mount(<Calculator />);
       const spy = jest.spyOn(wrapper.instance(), "setOperator");
       wrapper.instance().forceUpdate();
@@ -57,7 +57,7 @@ describe("Calculator", () => {
       expect(spy).toHaveBeenCalledTimes(1)
     });
 
-    it("callOperator is called when the submit key is clicked", () => {
+    it("calls callOperator when the submit key is clicked", () => {
       const wrapper = mount(<Calculator />);
       const spy = jest.spyOn(wrapper.instance(), "callOperator");
       wrapper.instance().forceUpdate();

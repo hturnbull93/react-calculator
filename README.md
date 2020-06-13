@@ -273,3 +273,11 @@ Wrote a test that passing "ce" will remove the last character of the display val
 - Added a if statement when passed "ce" to use slice to remove teh last character from the string, else to concatenate the value onto the string as before.
 
 Green.
+
+Wrote a test that passing "." when there is already one will prevent it being added. Red.
+
+- Added guard statement to return if the value is "." and the displayValue already contains one.
+
+Green.
+
+

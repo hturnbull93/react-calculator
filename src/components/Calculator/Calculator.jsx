@@ -18,6 +18,8 @@ class Calculator extends Component {
 
   updateDisplay = (value) => {
     let { displayValue } = this.state;
+    if (value === "." && displayValue.includes(".")) return
+
     let newDisplayValue
     if (displayValue === "0") {
       displayValue = "";

@@ -55,5 +55,14 @@ describe("Calculator", () => {
       wrapper.find('.operator-key').first().simulate('click');
       expect(spy).toHaveBeenCalledTimes(1)
     });
+
+    it("callOperator is called when the submit key is clicked", () => {
+      const wrapper = mount(<Calculator />);
+      const spy = jest.spyOn(wrapper.instance(), "callOperator");
+      wrapper.instance().forceUpdate();
+      expect(spy).toHaveBeenCalledTimes(0)
+      wrapper.find('.submit-key').first().simulate('click');
+      expect(spy).toHaveBeenCalledTimes(1)
+    });
   });
 });

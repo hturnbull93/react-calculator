@@ -246,3 +246,9 @@ Green.
 Wrote a test that setOperator is called when an operator key is clicked. Green.
 
 This test is already passing due to the previous change.
+
+### Submit Key Clicks Call callOperator
+
+Wrote a test that callOperator is called when the submit key is clicked. Green.
+
+This test is already passing due to the previous change.

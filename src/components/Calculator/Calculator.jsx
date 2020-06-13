@@ -33,11 +33,11 @@ class Calculator extends Component {
         break;
       case "/":
         result = parseFloat(storedValue / displayValue);
-        if (!isFinite(result)) result = 0
+        if (!isFinite(result)) result = 0;
         break;
 
       default:
-        return;
+        return this.setState({ displayValue: "0" });
     }
     this.setState({ displayValue: result.toString() });
   };

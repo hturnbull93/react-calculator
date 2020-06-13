@@ -357,3 +357,9 @@ Wrote a test that it sets displayValue to "0" if the result is infinite. Red.
 - Add a guard statement in division case that if the result is not finite, set result to 0.
 
 Green.
+
+Wrote a test that it will set displayValue to "0" if operator not recognised. Red.
+
+- Added the default switch to set state displayValue to "0".
+
+Green.

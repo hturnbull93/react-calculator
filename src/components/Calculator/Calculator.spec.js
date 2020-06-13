@@ -154,5 +154,14 @@ describe("Calculator", () => {
       wrapper.instance().callOperator();
       expect(wrapper.state("displayValue")).toEqual("2");
     });
+
+    it("performs multiplication", () => {
+      const wrapper = shallow(<Calculator />);
+      wrapper.setState({ storedValue: "2" });
+      wrapper.setState({ displayValue: "3" });
+      wrapper.setState({ selectedOperator: "x" });
+      wrapper.instance().callOperator();
+      expect(wrapper.state("displayValue")).toEqual("6");
+    });
   });
 });

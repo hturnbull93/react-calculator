@@ -3,6 +3,11 @@ import { shallow, mount } from "enzyme";
 import Keypad from "./Keypad";
 
 describe("Keypad", () => {
+  it("renders correctly", () => {
+    const wrapper = shallowKeypad();
+    expect(wrapper).toMatchSnapshot();
+  });
+
   it("renders 4 divs", () => {
     const wrapper = shallowKeypad();
     expect(wrapper.find("div").length).toEqual(4);

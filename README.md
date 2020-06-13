@@ -219,3 +219,7 @@ Wrote a test that the Keypad renders a Key component for each of numbers and ope
 The other tests that check for the rendered values of operators and numbers now break because of shallow rendering not rendering the key that now renders the value. Updated these tests to use mount instead of shallow.
 
 Also fixed the test that now finds 4 divs instead of three.
+
+### Keypad Snapshot
+
+Wrote a Keypad snapshot test.

@@ -20,12 +20,13 @@ class Calculator extends Component {
 
   updateDisplay = (value) => {
     let { displayValue } = this.state;
-    if (value === "." && displayValue.includes(".")) return
+    if (value === "." && displayValue.includes(".")) return;
 
-    let newDisplayValue
+    let newDisplayValue;
     if (displayValue === "0") displayValue = "";
-    newDisplayValue = value === "ce" ? displayValue.slice(0, -1) : displayValue.concat(value)
-    if (newDisplayValue === "") newDisplayValue = "0"
+    newDisplayValue =
+      value === "ce" ? displayValue.slice(0, -1) : displayValue.concat(value);
+    if (newDisplayValue === "") newDisplayValue = "0";
     this.setState({ displayValue: newDisplayValue });
   };
 

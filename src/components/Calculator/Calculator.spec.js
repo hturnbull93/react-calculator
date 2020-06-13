@@ -111,5 +111,12 @@ describe("Calculator", () => {
       wrapper.instance().setOperator("/");
       expect(wrapper.state("selectedOperator")).toEqual("/");
     });
+
+    it("sets storedValue with current displayValue", () => {
+      const wrapper = shallow(<Calculator />);
+      wrapper.setState({ displayValue: "5" });
+      wrapper.instance().setOperator("+");
+      expect(wrapper.state("storedValue")).toEqual("5");
+    });
   });
 });

@@ -297,3 +297,4 @@ Wrote a test that setOperator updates the value of selectedOperator. Red.
 
 Green.
 
+Wrote a test that it updates the storedValue with the current displayValue. Red.

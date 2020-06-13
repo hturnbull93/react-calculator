@@ -280,4 +280,12 @@ Wrote a test that passing "." when there is already one will prevent it being ad
 
 Green.
 
-Wrote a test that if the last character is deleted the displayValue is "0". Red
+Wrote a test that if the last character is deleted the displayValue is "0". Red.
+
+- Added a check after the assignment of newDisplayValue, if it is an empty string, set it to "0".
+
+Refactors:
+
+- Assign newDisplayValue using a ternary operator instead of if else blocks.
+- 
+

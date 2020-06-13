@@ -24,11 +24,8 @@ class Calculator extends Component {
     if (displayValue === "0") {
       displayValue = "";
     }
-    if (value === "ce") {
-      newDisplayValue = displayValue.slice(0, -1);
-    } else {
-      newDisplayValue = displayValue.concat(value);
-    }
+    newDisplayValue = value === "ce" ? displayValue.slice(0, -1) : displayValue.concat(value)
+
     if (newDisplayValue === "") {
       newDisplayValue = "0"
     }

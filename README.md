@@ -256,3 +256,10 @@ This test is already passing due to the previous change.
 ### updateDisplay Functionality
 
 Wrote a test that updateDisplay updates displayValue. Red.
+
+- Wrote updateDisplay to set the state with the passed displayValue.
+
+Green.
+
+Wrote a test that it concatenates sequential values into the displayValue. Red.
+

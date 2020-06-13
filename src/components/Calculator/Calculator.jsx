@@ -16,8 +16,13 @@ class Calculator extends Component {
 
   setOperator = () => {};
 
-  updateDisplay = (displayValue) => {
-    this.setState({ displayValue })
+  updateDisplay = (value) => {
+    let { displayValue } = this.state;
+    if (displayValue === "0") {
+      displayValue = "";
+    }
+    const newDisplayValue = displayValue.concat(value);
+    this.setState({ displayValue: newDisplayValue });
   };
 
   render() {

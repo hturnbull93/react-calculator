@@ -263,3 +263,13 @@ Green.
 
 Wrote a test that it concatenates sequential values into the displayValue. Red.
 
+- If the display value is still "0", set it to an empty string.
+- Then concatenate the passed value onto the displayValye and set that as state.
+
+Green.
+
+Wrote a test that passing "ce" will remove the last character of the display value. Red.
+
+- Added a if statement when passed "ce" to use slice to remove teh last character from the string, else to concatenate the value onto the string as before.
+
+Green.

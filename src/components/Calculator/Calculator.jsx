@@ -18,10 +18,15 @@ class Calculator extends Component {
 
   updateDisplay = (value) => {
     let { displayValue } = this.state;
+    let newDisplayValue
     if (displayValue === "0") {
       displayValue = "";
     }
-    const newDisplayValue = displayValue.concat(value);
+    if (value === "ce") {
+      newDisplayValue = displayValue.slice(0, -1);
+    } else {
+      newDisplayValue = displayValue.concat(value);
+    }
     this.setState({ displayValue: newDisplayValue });
   };
 

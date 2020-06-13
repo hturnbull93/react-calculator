@@ -73,12 +73,20 @@ describe("Calculator", () => {
       wrapper.instance().updateDisplay("5");
       expect(wrapper.state("displayValue")).toEqual("5");
     });
-    
+
     it("concatenates displayValue", () => {
       const wrapper = shallow(<Calculator />);
       wrapper.instance().updateDisplay("5");
       wrapper.instance().updateDisplay("0");
       expect(wrapper.state("displayValue")).toEqual("50");
+    });
+
+    it("ce removes last char of displayValue", () => {
+      const wrapper = shallow(<Calculator />);
+      wrapper.instance().updateDisplay("5");
+      wrapper.instance().updateDisplay("0");
+      wrapper.instance().updateDisplay("ce");
+      expect(wrapper.state("displayValue")).toEqual("5");
     });
   });
 });

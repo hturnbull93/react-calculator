@@ -66,4 +66,12 @@ describe("Calculator", () => {
       expect(spy).toHaveBeenCalledTimes(1)
     });
   });
+
+  describe('updateDisplay', () => {
+    it('updates displayValue', () => {
+      const wrapper = shallow(<Calculator />);
+      wrapper.instance().updateDisplay("5")
+      expect(wrapper.state('displayValue')).toEqual("5")
+    });
+  });
 });

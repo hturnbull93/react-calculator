@@ -252,3 +252,7 @@ This test is already passing due to the previous change.
 Wrote a test that callOperator is called when the submit key is clicked. Green.
 
 This test is already passing due to the previous change.
+
+### updateDisplay Functionality
+
+Wrote a test that updateDisplay updates displayValue. Red.

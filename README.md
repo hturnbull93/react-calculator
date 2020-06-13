@@ -345,3 +345,5 @@ Wrote a test that callOperator performs division. Red.
 - result is set with the parseFloat of the division of the stored numbers.
 
 Green.
+
+Wrote a test that callOperator sets displayValue to "0" if result is NaN. Red.

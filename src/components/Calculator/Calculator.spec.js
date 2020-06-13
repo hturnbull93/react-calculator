@@ -172,5 +172,14 @@ describe("Calculator", () => {
       wrapper.instance().callOperator();
       expect(wrapper.state("displayValue")).toEqual("1.5");
     });
+
+    it('guard against NaN', () => {
+      const wrapper = shallow(<Calculator />);
+      wrapper.setState({ storedValue: '3' });
+      wrapper.setState({ displayValue: 'string' });
+      wrapper.setState({ selectedOperator: '/' });
+      wrapper.instance().callOperator();
+      expect(wrapper.state('displayValue')).toEqual('0');
+    });
   });
 });

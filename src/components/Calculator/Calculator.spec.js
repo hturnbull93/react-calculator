@@ -208,5 +208,14 @@ describe("Calculator", () => {
       wrapper.instance().callOperator();
       expect(wrapper.state("displayValue")).toEqual("0");
     });
+
+    it('updates displayValue to "0" if operation results in "Infinity"', () => {
+      const wrapper = shallow(<Calculator />);
+      wrapper.setState({ storedValue: "7" });
+      wrapper.setState({ displayValue: "0" });
+      wrapper.setState({ selectedOperator: "/" });
+      wrapper.instance().callOperator();
+      expect(wrapper.state("displayValue")).toEqual("0");
+    });
   });
 });

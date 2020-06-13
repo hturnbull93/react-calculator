@@ -101,6 +101,5 @@ describe("Calculator", () => {
       wrapper.instance().updateDisplay('ce');
       expect(wrapper.state('displayValue')).toEqual('0');
     });
-
   });
 });

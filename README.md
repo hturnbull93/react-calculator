@@ -202,3 +202,6 @@ Green.
 
 Added and imported css for Key.
 
+### Key Snapshot
+
+Wrote a Key snapshot test.

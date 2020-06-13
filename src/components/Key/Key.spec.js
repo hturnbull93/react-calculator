@@ -3,6 +3,13 @@ import { shallow } from "enzyme";
 import Key from "./Key";
 
 describe("Key", () => {
+  it('renders correctly', () => {
+    const wrapper = shallow(
+      <Key keyAction={jest.fn()} keyType={""} keyValue={""} />
+    );
+    expect(wrapper).toMatchSnapshot()
+  });
+
   it("renders a div", () => {
     const wrapper = shallow(
       <Key keyAction={jest.fn()} keyType={""} keyValue={""} />

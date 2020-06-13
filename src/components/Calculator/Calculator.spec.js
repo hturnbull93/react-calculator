@@ -1,6 +1,6 @@
 import React from "react";
 import { shallow, mount } from "enzyme";
-import renderer from 'react-test-renderer';
+import renderer from "react-test-renderer";
 import Calculator from "./Calculator";
 import Display from "../Display/Display";
 import Keypad from "../Keypad/Keypad";
@@ -43,35 +43,42 @@ describe("Calculator", () => {
       const wrapper = mount(<Calculator />);
       const spy = jest.spyOn(wrapper.instance(), "updateDisplay");
       wrapper.instance().forceUpdate();
-      expect(spy).toHaveBeenCalledTimes(0)
-      wrapper.find('.number-key').first().simulate('click');
-      expect(spy).toHaveBeenCalledTimes(1)
+      expect(spy).toHaveBeenCalledTimes(0);
+      wrapper.find(".number-key").first().simulate("click");
+      expect(spy).toHaveBeenCalledTimes(1);
     });
 
     it("calls setOperator when an operator key is clicked", () => {
       const wrapper = mount(<Calculator />);
       const spy = jest.spyOn(wrapper.instance(), "setOperator");
       wrapper.instance().forceUpdate();
-      expect(spy).toHaveBeenCalledTimes(0)
-      wrapper.find('.operator-key').first().simulate('click');
-      expect(spy).toHaveBeenCalledTimes(1)
+      expect(spy).toHaveBeenCalledTimes(0);
+      wrapper.find(".operator-key").first().simulate("click");
+      expect(spy).toHaveBeenCalledTimes(1);
     });
 
     it("calls callOperator when the submit key is clicked", () => {
       const wrapper = mount(<Calculator />);
       const spy = jest.spyOn(wrapper.instance(), "callOperator");
       wrapper.instance().forceUpdate();
-      expect(spy).toHaveBeenCalledTimes(0)
-      wrapper.find('.submit-key').first().simulate('click');
-      expect(spy).toHaveBeenCalledTimes(1)
+      expect(spy).toHaveBeenCalledTimes(0);
+      wrapper.find(".submit-key").first().simulate("click");
+      expect(spy).toHaveBeenCalledTimes(1);
     });
   });
 
-  describe('updateDisplay', () => {
-    it('updates displayValue', () => {
+  describe("updateDisplay", () => {
+    it("updates displayValue", () => {
       const wrapper = shallow(<Calculator />);
-      wrapper.instance().updateDisplay("5")
-      expect(wrapper.state('displayValue')).toEqual("5")
+      wrapper.instance().updateDisplay("5");
+      expect(wrapper.state("displayValue")).toEqual("5");
+    });
+    
+    it("concatenates displayValue", () => {
+      const wrapper = shallow(<Calculator />);
+      wrapper.instance().updateDisplay("5");
+      wrapper.instance().updateDisplay("0");
+      expect(wrapper.state("displayValue")).toEqual("50");
     });
   });
 });

@@ -303,3 +303,5 @@ Wrote a test that it updates the storedValue with the current displayValue. Red.
 
 Green.
 
+Wrote a test that it sets displayValue to "0". Red.
+

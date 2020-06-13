@@ -118,5 +118,12 @@ describe("Calculator", () => {
       wrapper.instance().setOperator("+");
       expect(wrapper.state("storedValue")).toEqual("5");
     });
+
+    it('resets displayValue to "0"', () => {
+      const wrapper = shallow(<Calculator />);
+      wrapper.setState({ displayValue: "5" });
+      wrapper.instance().setOperator("+");
+      expect(wrapper.state("displayValue")).toEqual("0");
+    });
   });
 });

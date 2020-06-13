@@ -33,6 +33,7 @@ class Calculator extends Component {
         break;
       case "/":
         result = parseFloat(storedValue / displayValue);
+        if (!isFinite(result)) result = 0
         break;
 
       default:
